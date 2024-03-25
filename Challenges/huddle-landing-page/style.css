@@ -1,0 +1,133 @@
+html {
+    font-size: 62.5%;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background: url('images/bg-mobile.svg'), var(--violet);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 2.5rem 3.0rem;
+}
+
+.logo-container {
+    width: 13.5rem;
+}
+
+header {
+    margin-bottom: 5.5rem;
+}
+
+.product-illustration {
+    margin-bottom: 3.5rem;
+}
+
+.describe {
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    line-height: 1.0;
+    margin-bottom: 1.6rem;
+}
+
+.about-product {
+    color: gainsboro;
+}
+
+.register-btn {
+    background-color: white;
+    padding: 1.0rem 5.8rem;
+    border-radius: 2.5rem;
+    margin: 2.0rem 0;
+    display: inline-block;
+    color: black;
+    box-shadow: 0.2rem 0.2rem  black;
+    transition: all 350ms ease-in-out;
+}
+
+.register-btn:hover {
+    transform: translate(0.2rem, 0.2rem);
+    box-shadow: none;
+    color: var(--violet);
+}
+
+
+@media screen and (min-width: 893px) {
+
+    body {
+        background: url('images/bg-desktop.svg'), var(--violet);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        font-size: 1.6rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    .describe {
+        justify-self: self-start;
+        padding-top: 4.5rem;
+        text-align: start;
+    }
+
+    footer {
+        /* position: absolute; */
+        bottom: 1.8rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .describe article {
+        width: 65%;
+    }
+
+    .page-title {
+        font-size: 4.5rem;
+    }
+}
