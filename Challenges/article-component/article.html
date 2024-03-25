@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <main>
+      <!-- article image -->
+      <section class="article_image">
+        <img src="images/drawers.jpg" alt="">
+      </section>
+
+      <!-- article text description -->
+      <section class="article_details">
+        <p class="article_tagline">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your home
+        </p>
+        <article>
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
+        </article>
+
+        <div class="author_details">
+          <div class="author_card">
+            <img src="images/avatar-michelle.jpg" alt="Michell avatar" class="author_avatar">
+            <div class="card_details">
+              <p class="author_names">
+                Michelle Appleton
+              </p>
+              <p class="publication_date">
+                28 Jun 2020
+              </p>
+            </div>
+          </div>
+         <div class="share_card">
+          <button>
+            <img src="images/icon-share.svg" alt="">
+          </button>
+         </div>
+
+          <div class="popup hidden">
+            <span>share</span>
+            <ul class="social_links">
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Cousnay" target="_blank">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Cousnay</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

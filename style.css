@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #111f27;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 500;
+    background-color: #f3f4f4;
+    color: #111f27;
+}
+
+.container {
+    padding: 1.5rem 2.5rem;
+}
+
+.page-banner {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 5.5rem;
+    border-radius: 50%;
+}
+
+nav,
+.social-links  {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+ion-icon {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.hero-section {
+    text-align: center;
+    max-width: 80.0rem;
+    margin: 4.5rem auto;
+}
+
+.page-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.subheading {
+    font-weight: 500;
+    color: gray;
+}
+
+.challenge-collection {
+    max-width: 127.2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.challenge-card {
+    width: 30.0rem;
+    height: 35.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.4rem 0.4rem 1.0rem #dfe6ea,
+    0.5rem 0.5rem 1.2rem #dfe6ea,
+    0.6rem 0.6rem 1.3rem #dfe6ea;
+    overflow: hidden;
+    border-radius: 1.2rem;
+}
+
+.project-preview {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    flex: 1;
+}
+
+.challenge-card header {
+    /* position: absolute; */
+    color: #111f27;
+    padding: 1.2rem ;
+    /* background-color: #dfe6ea; */
+}
+
+.description a {
+    color: #111f27;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description ion-icon {
+    transition: all 220ms ease-in-out;
+}
+
+.description a:hover ion-icon {
+    color: #e6390d;
+    transform: rotate(-45deg);
+}
+
+.languages {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.2rem;
+}
+
+.languages span {
+    border: 0.1rem solid #111f27;
+    padding: 0.5rem 1.0rem;
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}

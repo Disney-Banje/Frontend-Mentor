@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <div class="banner"></div>
+  <main>
+    <div class="container">
+      <main>
+        <section class="mobile_ui">
+          <div class="mobile_header">
+            <div class="contact_details">
+              <button>
+                <ion-icon name="chevron-back-outline"></ion-icon>
+              </button>
+              <img src="images/avatar.jpg" alt="contact avatar">
+              <div class="contact_status">
+                <p class="contact_name">Samuel Green</p>
+                <p class="contact_state">Available to walk</p>
+              </div>
+            </div>
+            <button>
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="chat_ui">
+            <div class="contact_message">
+              <p class="message_content">
+                That sounds great. I'd be happy with that.
+              </p>
+              <p class="message_content">
+                Could you send over some pictures of your dog, please?
+              </p>
+            </div>
+
+            <div class="user_response">
+              <div class="image_files">
+                <img src="images/dog-image-1.jpg" alt="dog image">
+                <img src="images/dog-image-2.jpg" alt="dog image">
+                <img src="images/dog-image-3.jpg" alt="dog image">
+              </div>
+              <div class="response_content">
+                <p class="message">Here are a few pictures. She's a happy girl!</p>
+                <p class="message">Can you make it?</p>
+              </div>
+            </div>
+            <div class="contact_message">
+              <p class="message_content">
+                She looks so happy! The time we discussed works. How long shall I take her out for?
+              </p>
+            </div>
+            <div class="contact_notification">
+                <div class="notification_content">
+                  <div class="tag_status">
+                    <div class="checkbox"></div>
+                    <p class="duration">30 minute walk</p>
+                  </div>
+                  <p class="amount">$29</p>
+                </div>
+                <div class="notification_content">
+                  <div class="tag_status">
+                    <div class="checkbox"></div>
+                    <p class="duration">1 hour walk</p>
+                  </div>
+                  <p class="amount">$49</p>
+                </div>
+            </div>
+            <div class="input_container">
+              <label for="message">
+                <input type="text" placeholder="Type a message..." id="message">
+                <ion-icon name="chevron-forward-circle"></ion-icon>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="ui_description">
+          <h1>Simple booking</h1>
+          <article>
+            <p>
+              Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+</body>
+</html>

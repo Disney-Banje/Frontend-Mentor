@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+button {
+    border: none;
+    background-color: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    display: grid;
+    place-content: center;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 3.0rem 1.5rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    box-shadow: 0.3rem 0.6rem 1.8rem var(--Light-Grayish-Blue);
+    position: relative;
+    width: 32.0rem;
+}
+
+
+/* .article_image {
+    background-image: url(images/drawers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 40%;
+    /* height: 21.0rem; */
+/* } */ 
+
+.article_image img {
+    width: 100%;
+    height: 21.0rem;
+    object-fit: cover;
+}
+
+.article_details {
+    flex: 60%;
+    padding: 3.0rem 2.5rem 1.6rem;
+}
+
+.article_tagline {
+    font-weight: 700;
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+article {
+    color: var(--Grayish-Blue);
+    margin-bottom: 2.4rem;
+}
+
+.author_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10;
+}
+
+.author_card {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.author_avatar {
+    max-width: 4.0rem;
+    border-radius: 50%;
+}
+
+.author_names {
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.publication_date {
+    color: var(--Grayish-Blue);
+}
+
+button {
+    background-color: var(--Light-Grayish-Blue);
+    width: 4.0rem;
+    height: 4.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.popup {
+    position: absolute;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 1.6rem 2.5rem;
+}
+
+.social_links {
+    display: flex;
+    gap: 1.2rem;
+}
+
+span {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--Light-Grayish-Blue);
+}
+
+ion-icon {
+    font-size: 2.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 670px) {
+    body {
+        width: 100vw;
+        min-height: 100vh;
+        /* font-size: 1.4rem; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 66.9rem;
+        margin-bottom: 3.0rem;
+        overflow: visible;
+        border-radius: 1.0rem;
+        /* height: fit-content; */
+    }
+
+    .article_image {
+        flex: 40%;
+        background-image: url(images/drawers.jpg);
+        background-position: left;
+        background-size: cover;
+        border-radius: 1.0rem 0 0 1.0rem;
+    }
+
+    .article_image img {
+        display: none;
+    }
+
+    .article_details {
+        flex: 60%;
+        padding: 3.0rem 2.8rem 1.6rem;
+    }
+
+    .article_tagline {
+        font-size: 2.0rem;
+    }
+
+    .popup {
+        padding: 1.2rem 2.0rem;
+        width: fit-content;
+        border-radius: 0.8rem;
+        bottom: 8.2rem;
+        right: -5.8rem;
+        box-shadow: 0.2rem 0.6rem 1.8rem var(--Grayish-Blue);
+    }
+
+    .popup::after {
+        content: "";
+        position: absolute;
+        right: 43%;
+        bottom: -1.6rem;
+        width: 0;
+        height: 0;
+        border-left: 1.8rem solid transparent;
+        border-right: 1.8rem solid transparent;
+        border-top: 2.0rem solid var(--Very-Dark-Grayish-Blue);
+    }
+
+    .active {
+        border: 0.2rem dotted var(--Very-Dark-Grayish-Blue);
+    }
+
+    button {
+        cursor: pointer;
+    }
+}

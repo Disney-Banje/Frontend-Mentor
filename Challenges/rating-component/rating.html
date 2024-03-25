@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="container selection-slate">
+    <div class="icon-star">
+      <img src="images/icon-star.svg" alt="star icon">
+    </div>
+    <div class="card-description">
+      <h1>How did we do?</h1>
+      <p class="message">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    </div>
+    <div class="rating-section">
+      <div class="rating-digit">1</div>
+      <div class="rating-digit">2</div>
+      <div class="rating-digit">3</div>
+      <div class="rating-digit">4</div>
+      <div class="rating-digit">5</div>
+    </div>
+    
+      <button id="submit" class="btn">submit</button>
+  </div>
+
+  <div class="container thankYouSlate">
+    <div class="slate-icon">
+      <img src="images/illustration-thank-you.svg" alt="thank you illustration">
+    </div>
+    <p class="choice-preview">
+      You selected
+      <span></span>
+      out of 5
+    </p>
+    <h1>Thank you!</h1>
+    <p class="message">We appreciate you taking the time to give a rating. If you ever need more support, dont't hesitate to get in touch!</p>
+    
+    <button id="rate_again" class="btn">rate again</button>
+  </div>
+
+  <!-- Thank you state end -->
+
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Disney-Banje?tab=repositories">Cousnay</a>.
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
